@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#ifndef SORTS H
+#ifndef SORTS_H
 #define SORTS_H
 
 
