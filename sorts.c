@@ -69,7 +69,7 @@ void selectionSort(int* ar,int size){
         }
 }
 void countsort(int *ar, int size){
-    int max = getMax(ar,size);
+    int max = retMax(ar,size);
     int array[max+1];
 	for (int i = 0; i <max+1; i++){
 		array[i] = 0;
