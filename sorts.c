@@ -1,7 +1,7 @@
 #include <iostream>
-using namespace std;
-#include "sorts.h"
 
+#include "sorts.h"
+using namespace std;
 
 void insertionSort(int* ar,int size){
         int element;
