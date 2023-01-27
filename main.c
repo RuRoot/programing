@@ -1,4 +1,5 @@
 #include <iostream>
-using namespace std;
+using namespace std;	//обычно это между инклудами не пишут... так плохо...
+
 #include "sorts.h"
-int main(){return 0;}
+int main(){return 0;}	//это не доказывает работоспособность твоего алгоритма сортировки...

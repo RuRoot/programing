@@ -2,6 +2,7 @@
 using namespace std;
 #include "sorts.h"
 
+//не комилируется.... значит не смотрю....
 
 void insertionSort(int* ar,int size){
         int element;
