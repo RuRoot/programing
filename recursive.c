@@ -27,6 +27,50 @@ int  inkUp(int z){
        return(z);
 
 }
+int getMax(int* ar, int size){
+  
+   static int index=0;
+  
+    static int size1=size;
+    static int max=ar[index];
+   // cout<<"индекс "<<index<<" max "<<max<<" size "<<size1<<" ar[index] "<<ar[index]<< endl;
+    if (index==size1-1){
+        return(max);
+    }
+    if (max<=ar[index]){
+       
+        max=ar[index];
+      
+    }
+    
+    
+   
+    index=index+1;
+    getMax(ar,index);
+    
+}
+int getMin(int* ar, int size){
+  
+   static int index=0;
+  
+    static int size1=size;
+    static int min=ar[index];
+   // cout<<"индекс "<<index<<" max "<<max<<" size "<<size1<<" ar[index] "<<ar[index]<< endl;
+    if (index==size1-1){
+        return(min);
+    }
+    if (min>=ar[index]){
+       
+        min=ar[index];
+      
+    }
+    
+    
+   
+    index=index+1;
+    getMin(ar,index);
+    
+}
 
 int showUp(int n){
         static int z=0;//от

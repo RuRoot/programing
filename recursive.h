@@ -7,4 +7,6 @@ int showUp(int n);
 int showDn(int n);
 int  inkUp(int z);
 int  dictDn(int n);
+int getMin(int* ar, int size);
+int getMax(int* ar, int size);
 #endif

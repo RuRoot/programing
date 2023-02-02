@@ -22,7 +22,6 @@ void testInsertionSorts() {
 
 	
 }
-
 void testselectionSort() {
         
                 int ar[] = {10,5,50,7,4,3,8,2,1};
@@ -63,8 +62,6 @@ void testbubbleSort(){
 
     
 }
-
-
 void testcountSort(){
     
             int ar[] = {10,5,50,7,4,3,8,2,1};
@@ -94,7 +91,6 @@ void testShowUp(){
         cout << "showUp is OK" << endl;
     }
 }
-
 void testShowDn(){
    int etalonInt = 876543210;
     if (etalonInt != showDn(8)){
@@ -105,7 +101,29 @@ void testShowDn(){
     }
 }
 
+void testGetMin(){
+    int ar[]={123,1,134,8};
+    int etalonInt = 1;
+    if (etalonInt != getMin(ar,4)){
+        cout << "getMin FAILED" << endl;
+    }
+    else{
+        cout << "getMin is OK" << endl;
+    }
+}
+void testGetMax(){
+    int ar[]={123,1,134,8};
+    int etalonInt = 134;
+    if (etalonInt != getMax(ar,4)){
+        cout << "getMax FAILED" << endl;
+    }
+    else{
+        cout << "getMax is OK" << endl;
+    }
+}
+
 int main(){
+    
         testInsertionSorts();
 
         testselectionSort();
@@ -117,5 +135,9 @@ int main(){
         testShowUp();
         
         testShowDn();
+        
+        testGetMax();
+        
+        testGetMin();
         
 }
