@@ -1,35 +1,30 @@
 #include <iostream>
-<<<<<<< HEAD
-using namespace std;	//обычно это между инклудами не пишут... так плохо...
-
-#include "sorts.h"
-int main(){return 0;}	//это не доказывает работоспособность твоего алгоритма сортировки...
-=======
-
 #include "sorts.h"
 #include "recursive.h"
+
 using namespace std;
+
 void testInsertionSorts() {
-        
+	{ //test 1
+		std::cout << "test1 insertion sort is ";
+		const int SIZE = 9;
 		int ar[] = {9,8,7,6,5,4,3,2,1};
 		int etalonAr[] = {9,8,7,6,5,4,3,2,1};
-		insertionSort(ar, 9);
-		bool ok = true;
-		for (int i = 0; i < 9; i++) {
+		insertionSort(ar, SIZE);
+		int i = 0;
+		for (; i < SIZE; i++) {
 			if (etalonAr[i] != ar[i]) {
-                                cout << "insertionSort FAILED" << endl;
-				ok = false;
+                		cout << "FAILED" << endl;
 				break;
 			}
 		}
-		if (ok == true) {
-                        cout << "insertionSort is OK" << endl;
+		if (i != SIZE-1) {
+        		cout << "OK" << endl;
 		}
-
-	
+	}
 }
+
 void testselectionSort() {
-        
                 int ar[] = {10,5,50,7,4,3,8,2,1};
                 int etalonAr[] = {1,2,3,4,5,7,8,10,50};
                 selectionSort(ar, 9);
