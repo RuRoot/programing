@@ -6,21 +6,20 @@ using namespace std;
 int  dictDn(int n){
         n=n-1;
         return(n);
-
 }
 
 int showDn(int n){
-        static string bufer="";
+        static string bufer="";	//это правильное решение отчасти...  но если вызвать функцию два раза будет беда - проверь
+				//если прям так хочется, то лучше добавлять значения в строку, только не статичную....
+				// bufer += showDn(n-1)
         bufer=bufer+to_string(n);
        
-        n=dictDn(n);
+        n=dictDn(n);	//так не надо...
         if(n == -1){
                 return stoi(bufer);
                   }
         showDn(n);
         //return 1;
-
-
 }
 int  inkUp(int z){
        z=z+1;
