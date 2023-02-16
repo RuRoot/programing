@@ -88,9 +88,9 @@ void testmerge() {
 		std::cout << "test " << countTest++ << std::endl;
 		const int SIZE_AR = 10;
 		int ar[SIZE_AR] = {1, 2, 1, 2, 0, 0, -9, 90, -11};
-		showEl(ar, SIZE_AR);
+		print(ar, SIZE_AR);
 		mergeSort(ar, SIZE_AR);
-		showEl(ar, SIZE_AR);
+		print(ar, SIZE_AR);
 	}
 
 	std::cout << "-------------" << std::endl;
