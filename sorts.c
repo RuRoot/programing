@@ -130,14 +130,11 @@ void countsort(int *ar, int size){
 	}
 }
 
-void randomFilling(int* ar,int size){
+void randomFilling(int* ar,int size,int min,int max){
      srand(time(0));
-     for(int p=0;p<size;p++){//заполняем массив рандомными числами 
-       
-        int q = 0+rand()%(10);
-         
-        ar[p]=q;
-    
+     for(int p = 0;p < size; p++){
+        int num = min + rand() % (max - min + 1);
+        ar[p] = num;
 }}
 
 void print(int* ar,int size){
