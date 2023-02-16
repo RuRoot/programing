@@ -12,10 +12,8 @@ void selectionSort(int* ar, int size);
 int retMax(int* ar,int size);
 int retMin(int* ar,int size);
 void countsort(int *ar, int size);
-
-
-
-
+void randomFilling(int* ar,int size,int min,int max);
+     
 
 
 
