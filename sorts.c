@@ -32,7 +32,39 @@ void insertionSort(int* ar,int size){
                 ar[indexArr] = element;//в ручную бахнули элемент с конца по начало 
         }
 }
+void swap(int& a, int& b) {
+	int temp = a;
+	a = b;
+	b = temp;
+}
+void quickSort(int* ar, int size) {
+	int left = 0;
+	int right = size - 1;
+	int pivot = ar[size >> 1];
 
+	while(left <= right) {
+		while(ar[left] < pivot) {
+			left++;
+		}
+
+		while (ar[right] > pivot) {
+			right--;
+		}
+
+		if (left <= right) {
+			swap(ar[right], ar[left]);
+			right--;
+			left++;
+		}
+	}
+	if (right > 0) {
+		quickSort(&ar[0], right + 1);
+	}
+
+	if (left < size) {
+		quickSort(&ar[left], size - left);
+	}
+}
 
 static void merge(int* ar, int size, int central) {
     int left = 0;
