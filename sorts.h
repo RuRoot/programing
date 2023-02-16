@@ -14,7 +14,7 @@ int retMin(int* ar,int size);
 void countsort(int *ar, int size);//5
 void randomFilling(int* ar,int size,int min,int max);
 void swap(int& a, int& b);     
-
+int isSort (int* ar,int size);
 void quickSort(int* ar, int size);//6
 
 
